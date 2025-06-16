@@ -6,6 +6,8 @@ services:
       - "3000:8080"
     volumes:
       - open-webui:/app/backend/data
+    environment:
+      - ENABLE_SIGNUP=false
     restart: unless-stopped
 
 volumes:
